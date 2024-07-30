@@ -1,0 +1,62 @@
+- #### GPS (Location Services)
+- android.location.PROVIDERS_CHANGED_ACTION: 위치 제공자(예: GPS)가 변경될 때 발생하는 인텐트.
+- android.location.MODE_CHANGED: 위치 모드가 변경될 때 발생하는 인텐트. 
+- #### Bluetooth
+- BluetoothAdapter.ACTION_STATE_CHANGED: 블루투스 상태가 변경될 때 발생하는 인텐트.
+- BluetoothAdapter.ACTION_CONNECTION_STATE_CHANGED: 블루투스 연결 상태가 변경될 때 발생하는 인텐트.
+- BluetoothDevice.ACTION_FOUND: 블루투스 장치를 발견했을 때 발생하는 인텐트.
+- BluetoothDevice.ACTION_ACL_CONNECTED: 블루투스 장치와의 연결이 활성화될 때 발생하는 인텐트.
+- BluetoothDevice.ACTION_ACL_DISCONNECTED: 블루투스 장치와의 연결이 비활성화될 때 발생하는 인텐트.
+- #### 화면 on/off
+- Intent.ACTION_SCREEN_ON: 화면이 켜질 때 발생하는 인텐트.
+- Intent.ACTION_SCREEN_OFF: 화면이 꺼질 때 발생하는 인텐트.
+- Intent.ACTION_USER_PRESENT: 사용자가 디바이스를 잠금 해제하고 화면에 나타날 때 발생하는 인텐트.
+- #### 배터리 상태
+- Intent.ACTION_BATTERY_CHANGED: 배터리 상태가 변경될 때 발생하는 인텐트.
+- Intent.ACTION_BATTERY_LOW: 배터리 수준이 낮을 때 발생하는 인텐트.
+- Intent.ACTION_BATTERY_OKAY: 배터리 수준이 충분할 때 발생하는 인텐트.
+- #### 네트워크 상태
+- ConnectivityManager.CONNECTIVITY_ACTION: 네트워크 연결 상태가 변경될 때 발생하는 인텐트.
+- WifiManager.WIFI_STATE_CHANGED_ACTION: Wi-Fi 상태가 변경될 때 발생하는 인텐트.
+- WifiManager.NETWORK_STATE_CHANGED_ACTION: Wi-Fi 네트워크 상태가 변경될 때 발생하는 인텐트.
+- #### 오디오
+- AudioManager.RINGER_MODE_CHANGED_ACTION: 벨소리 모드가 변경될 때 발생하는 인텐트.
+- AudioManager.VOLUME_CHANGED_ACTION: 볼륨이 변경될 때 발생하는 인텐트.
+- 전화 상태TelephonyManager.ACTION_PHONE_STATE_CHANGED: 전화 상태가 변경될 때 발생하는 인텐트.
+- TelephonyManager.ACTION_RESPOND_VIA_MESSAGE: 전화 수신 시 메시지로 응답할 때 발생하는 인텐트.
+- #### 시간/날짜
+- Intent.ACTION_TIME_CHANGED: 시스템 시간이 변경될 때 발생하는 인텐트.
+- Intent.ACTION_DATE_CHANGED: 시스템 날짜가 변경될 때 발생하는 인텐트.
+- Intent.ACTION_TIMEZONE_CHANGED: 시스템 타임존이 변경될 때 발생하는 인텐트.
+- #### 백그라운드 데이터 사용
+- ConnectivityManager.ACTION_RESTRICT_BACKGROUND_CHANGED: 백그라운드 데이터 사용 제한 상태가 변경될 때 발생하는 인텐트.
+- #### 앱 설치/삭제
+- Intent.ACTION_PACKAGE_ADDED: 새로운 애플리케이션 패키지가 설치될 때 발생하는 인텐트.
+- Intent.ACTION_PACKAGE_REMOVED: 애플리케이션 패키지가 삭제될 때 발생하는 인텐트.
+- Intent.ACTION_PACKAGE_REPLACED: 애플리케이션 패키지가 교체될 때 발생하는 인텐트.
+- #### 부팅
+- Intent.ACTION_BOOT_COMPLETED: 디바이스가 부팅을 완료했을 때 발생하는 인텐트.
+- 시스템 설정Intent.ACTION_AIRPLANE_MODE_CHANGED: 비행기 모드가 변경될 때 발생하는 인텐트.
+- Intent.ACTION_LOCALE_CHANGED: 시스템 로케일이 변경될 때 발생하는 인텐트.
+- #### 미디어 관련
+- Intent.ACTION_MEDIA_MOUNTED: 외부 스토리지가 장착되었을 때 발생하는 인텐트.
+- Intent.ACTION_MEDIA_UNMOUNTED: 외부 스토리지가 제거되었을 때 발생하는 인텐트.
+- Intent.ACTION_MEDIA_SCANNER_STARTED: 미디어 스캐너가 시작될 때 발생하는 인텐트.
+- Intent.ACTION_MEDIA_SCANNER_FINISHED: 미디어 스캐너가 완료될 때 발생하는 인텐트.
+- #### 전원 상태
+- Intent.ACTION_POWER_CONNECTED: 디바이스가 전원에 연결되었을 때 발생하는 인텐트.
+- Intent.ACTION_POWER_DISCONNECTED: 디바이스가 전원에서 분리되었을 때 발생하는 인텐트.
+- #### 충전 상태
+- Intent.ACTION_BATTERY_CHANGED: 배터리 상태가 변경될 때 발생하는 인텐트.
+- Intent.ACTION_BATTERY_LOW: 배터리 수준이 낮을 때 발생하는 인텐트.
+- Intent.ACTION_BATTERY_OKAY: 배터리 수준이 충분할 때 발생하는 인텐트.
+- #### 인터넷 브라우징
+- Intent.ACTION_VIEW: URI를 열 때 발생하는 인텐트. 예를 들어 웹페이지를 열기 위해 브라우저를 호출할 때 사용.
+- #### 앱 설정
+- Intent.ACTION_APPLICATION_PREFERENCES: 애플리케이션의 설정을 열 때 발생하는 인텐트.
+- #### 앱 활성화
+- Intent.ACTION_MAIN: 앱의 메인 액티비티를 시작할 때 사용되는 인텐트.
+- #### 다른 앱 호출
+- Intent.ACTION_SEND: 데이터를 다른 애플리케이션으로 보낼 때 사용하는 인텐트.
+- Intent.ACTION_SENDTO: 메시지를 특정 수신자에게 보낼 때 사용하는 인텐트.
+- Intent.ACTION_CHOOSER: 여러 인텐트 중에서 사용자가 선택할 수 있도록 하는 인텐트.
